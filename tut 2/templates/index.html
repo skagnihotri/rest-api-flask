@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+</head>
+<body>
+
+	<!-- learn ginger template for better understating -->
+
+	<!-- if else -->
+	{% if number > 10 %} 
+		<p> {{number}} is greater than 10 </p>
+	{% else %}
+		<p> {{number}} is smaller than 10 </p>
+	{% endif %}
+
+
+	<!-- for loop -->
+	{% for friend in my_friend %}
+		<!-- print statement -->
+		<h3> {{friend}} </h3>
+	{% endfor %}
+
+
+	<h1>Heading 1</h1>
+	<h3>heading 3</h3>
+</body>
+</html>
