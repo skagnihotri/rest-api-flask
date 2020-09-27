@@ -50,7 +50,10 @@ def single_prediction(sentence) :
 def classify() :
 	sentence = request.form['text_box']
 	pred = single_prediction(sentence)
+	pred = pred.split('.')
+	pred = ' '.join(pred)
 	return render_template('index.html', prediction = pred)
 
 if __name__ == '__main__':
-	app.run(debug = True)
+	# app.run(debug = True)
+	app.run()
