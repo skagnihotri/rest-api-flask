@@ -23,6 +23,10 @@ def home() :
 def test():
 	return 'Hello world'
 
+@app.route('/about')
+def about():
+	return '<h1>This is a test classification project deploy</h1>'
+
 
 # Function to convert into simple pos tags
 def get_simple_pos(tag) :
