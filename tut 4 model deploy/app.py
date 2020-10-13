@@ -19,6 +19,10 @@ label_y = joblib.load('label_y.pkl')
 @app.route('/')
 def home() :
 	return render_template('index.html')
+@app.route('/test')
+def test():
+	return 'Hello world'
+
 
 # Function to convert into simple pos tags
 def get_simple_pos(tag) :
