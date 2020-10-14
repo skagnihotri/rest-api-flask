@@ -10,11 +10,12 @@ from nltk import pos_tag
 from nltk.corpus import wordnet
 from re import sub
 
-app = Flask(__name__)
 
+app = Flask(__name__)
 classifier = joblib.load('text_classifier.pkl')
 tfidf = joblib.load('tfidf.pkl')
 label_y = joblib.load('label_y.pkl')
+
 
 @app.route('/')
 def home() :
