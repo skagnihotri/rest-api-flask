@@ -1,10 +1,10 @@
 # Library
-import smtplib 
+import smtplib
 
 def send_mail(sender, reciever) :
 	# creates SMTP session 
 	session = smtplib.SMTP('smtp.gmail.com', 587) 
-	  
+	
 	# start TLS for security 
 	session.starttls() 
 	
