@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send mail</title>
+</head>
+<body>
+	<center>
+		<h1> Compose E-Mail </h1>
+	</center>
+
+	</fieldset><form method="POST" action="/">
+		<fieldset>
+			<legend>E-mail</legend>
+		<label>From :</label>
+		<input type="email" name="from" placeholder="From"><br><br>
+		<label>To :</label>
+		<input type="email" name="to" placeholder="To"><br><br>
+		<label>Subject :</label>
+		<input type="text" name="subject" placeholder="Subject"><br><br>
+		
+		<textarea name="message" rows="10" cols="70" placeholder="Enter mail here..."></textarea><br><br>
+
+		<label>Password :</label>
+		<input type="password" name="password" placeholder="Password"><br><br>
+		
+		<input type="submit">
+	</form></fieldset>
+
+	{% if done %}
+		<h3> E-mail send !! </h3>
+	{% endif %}
+	
+</body>
+</html>
